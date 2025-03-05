@@ -16,9 +16,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Dashboards />
-    <List />
-    <SignIn />
+    <App />
   </React.StrictMode>
 );
 

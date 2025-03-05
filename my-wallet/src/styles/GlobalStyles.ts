@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
+
 export default createGlobalStyle`
 
 body{
@@ -8,6 +9,7 @@ height: 100vh;
 background-color: #fff;
 color: orange;
 text-align: center;
+
 }
 
 *{

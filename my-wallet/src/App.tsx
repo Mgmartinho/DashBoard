@@ -4,25 +4,16 @@ import './App.css';
 
 
 import GlobalStyles from './styles/GlobalStyles';
+import Dashboard from './Pages/Dashboards';
+import Layout from './components/MainHeader';
 
-function App() {
+const App: React.FC = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Conheça sua Carteira agora
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Wallet
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <Layout />
+    </>
   );
 }
 
