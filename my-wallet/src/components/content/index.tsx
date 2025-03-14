@@ -1,13 +1,20 @@
-
-import { Container } from './styles'
 import React from "react";
+import { Container } from './styles'
+import ContentHeader from "../ContentHeader";
 
-const Content: React.FC = () => {
+
+const Content: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     return (
-        <Container>
-            <h1>Content</h1>
-        </Container>
+        
+            <Container>
+                <ContentHeader title="Dashboard" lineColors="#fff">
+                    {children}
+                </ContentHeader>
+            </Container>
+
+        
     );
-};
+
+}
 
 export default Content;

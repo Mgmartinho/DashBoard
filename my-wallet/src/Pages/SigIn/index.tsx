@@ -1,14 +1,14 @@
 import React from 'react'
 
-const List = () => {
+const SignIn = () => {
     return (
         <div>
             <h1>
-                List
+                SignIn
             </h1>
 
         </div>
     )
 }
 
-export default List;
+export default SignIn;

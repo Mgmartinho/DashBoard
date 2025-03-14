@@ -1,12 +1,9 @@
 import styled from "styled-components";
-import React from "react";
-
+//CONTENT
 export const Container = styled.div`
-
-
-
+    grid-area: CT;
+    color: ${props => props.theme.colors.white};
+    background-color: ${props => props.theme.colors.primary};
+    padding: 25px
 `;
 
-
-
-export default Container;

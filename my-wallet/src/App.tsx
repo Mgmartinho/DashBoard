@@ -1,20 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-
-import GlobalStyles from './styles/GlobalStyles';
-import Dashboard from './Pages/Dashboards';
-import Layout from './components/MainHeader';
+import React,{useMemo} from "react";
+import GlobalStyles from "./styles/GlobalStyles";
+import Layout from "./components/Layout";
+import { ThemeProvider } from "styled-components";
+import dark from "./styles/themes/dark";
+import light from "./styles/themes/light";
+import Dashboard from "./pages/Dashboard";
+import List from "./pages/List";
+import SignIn from "./pages/SigIn";
 
 const App: React.FC = () => {
 
-  return (
-    <>
-      <GlobalStyles />
-      <Layout />
-    </>
-  );
-}
+ 
+    return (
+        
+            <ThemeProvider theme={dark}>
+                <GlobalStyles />
+                <Layout>
+                    <List />
+                </Layout>
+            </ThemeProvider>
+        
+    );
+
+};
 
 export default App;
