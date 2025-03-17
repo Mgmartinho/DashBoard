@@ -1,4 +1,4 @@
-import React,{useMemo} from "react";
+import React, { useMemo } from "react";
 import GlobalStyles from "./styles/GlobalStyles";
 import Layout from "./components/Layout";
 import { ThemeProvider } from "styled-components";
@@ -10,16 +10,16 @@ import SignIn from "./pages/SigIn";
 
 const App: React.FC = () => {
 
- 
+
     return (
-        
-            <ThemeProvider theme={dark}>
-                <GlobalStyles />
-                <Layout>
-                    <List />
-                </Layout>
-            </ThemeProvider>
-        
+
+        <ThemeProvider theme={dark}>
+            <GlobalStyles />
+            <Layout>
+                <List />
+            </Layout>
+        </ThemeProvider>
+
     );
 
 };

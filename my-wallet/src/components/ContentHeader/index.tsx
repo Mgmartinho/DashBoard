@@ -16,15 +16,10 @@ const ContentHeader: React.FC<IContentHeaderProps> = ({
 }) => {
 
   
-    
-
-  
-
-   
 
     return (
         <Container>
-            <TitleContainer>
+            <TitleContainer lineColor={lineColors}>
                 <h1>{title}</h1>
             </TitleContainer>
 

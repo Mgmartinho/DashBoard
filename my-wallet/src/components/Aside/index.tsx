@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Header, LogImg, MenuContainer, MenuItemLink, Title } from './styles'
 import logImg from '../../assets/logo.svg'
-import { MdDashboard } from "react-icons/md";
-import { MdArrowDownward } from "react-icons/md";
-import { MdArrowUpward } from "react-icons/md";
-import { MdExitToApp } from "react-icons/md";
-
+import {
+    MdDashboard,
+    MdArrowDownward,
+    MdArrowUpward,
+    MdExitToApp,
+} from 'react-icons/md';
 
 
 const Aside: React.FC = () => {
@@ -18,20 +19,20 @@ const Aside: React.FC = () => {
                 <Title>Minha-Carteira</Title>
             </Header>
             <MenuContainer>
-                <MenuItemLink>
-                    <MdDashboard />
+                <MenuItemLink >
+                    <MdDashboard size={18}/>
                     Dashboard
                 </MenuItemLink>
-                <MenuItemLink>
-                    <MdArrowUpward />
+                <MenuItemLink >
+                    <MdArrowUpward size={18}/>
                     Entradas
                 </MenuItemLink>
-                <MenuItemLink>
-                    <MdArrowDownward />
+                <MenuItemLink >
+                    <MdArrowDownward size={18}/>
                     Saídas
                 </MenuItemLink>
-                <MenuItemLink>
-                    <MdExitToApp />
+                <MenuItemLink >
+                    <MdExitToApp size={18}/>
                     Sair
                 </MenuItemLink>
             </MenuContainer>
