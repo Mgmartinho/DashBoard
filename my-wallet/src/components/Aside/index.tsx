@@ -8,40 +8,37 @@ import {
     MdExitToApp,
 } from 'react-icons/md';
 
-
 const Aside: React.FC = () => {
+    const handleLogout = () => {
+        console.log("Usuário saiu"); // Substitua pela lógica de logout real
+    };
+
     return (
-
-
         <Container>
             <Header>
                 <LogImg src={logImg} alt="Logo Minha Carteira" />
                 <Title>Minha-Carteira</Title>
             </Header>
             <MenuContainer>
-                <MenuItemLink >
-                    <MdDashboard size={18}/>
+                <MenuItemLink to="/dashboard">
+                    <MdDashboard size={18} />
                     Dashboard
                 </MenuItemLink>
-                <MenuItemLink >
-                    <MdArrowUpward size={18}/>
+                <MenuItemLink to="/list/entry-balance">
+                    <MdArrowUpward size={18} />
                     Entradas
                 </MenuItemLink>
-                <MenuItemLink >
-                    <MdArrowDownward size={18}/>
+                <MenuItemLink to="/list/exit-balance">
+                    <MdArrowDownward size={18} />
                     Saídas
                 </MenuItemLink>
-                <MenuItemLink >
-                    <MdExitToApp size={18}/>
+                <MenuItemLink  to="/list/exit-balance">
+                    <MdExitToApp size={18} />
                     Sair
                 </MenuItemLink>
             </MenuContainer>
         </Container>
-
-
-
     );
-
 }
 
 export default Aside;
